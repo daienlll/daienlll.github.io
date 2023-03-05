@@ -62,7 +62,7 @@ summary {
     flex-wrap: nowrap;
 }
 
-h3 {
+.imghead {
     position: absolute;
     bottom: 8px;
     left: 16px;
