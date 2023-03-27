@@ -4,7 +4,5 @@ This is a basic portfolio of my works. The portfolio contains my name, a little 
 this readme has been updated to include the information about the Workday Scheduler i made.
 
 
-![scheduler](https://user-images.githubusercontent.com/124468495/228090926-46ed4ebb-b01c-41a5-b0d6-3527b585e90b.png)
-
-
+![scheduler](https://user-images.githubusercontent.com/124468495/228091149-9b3539a7-fdc3-4500-acee-a9830c06b94b.png)
 https://daienlll.github.io
