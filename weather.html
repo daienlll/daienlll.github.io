@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='./css/weather.css'>
-    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="favicon_cloud_flash_weather_rain_snow_icon.png">
+    <title>Weather Forecast</title>
 </head>
 
-<body>
-    <header class="heading" id="header">Weather Dashboard</header>
+<body class="Bg-color">
+  <nav>
+    <div class="nav-wrapper nav-color row">
+      <a href="#" class="brand-logo col s6 offset-s7">Weather Dashboard</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+    </div>
+  </nav>
 
-    <main id='container' class="container">
-        <div class="row">
-            <div class="stuff1">
-                <div id='search-area'>
-                    <h1 class='h1'>Search for a City:</h1>
-                    <form id='city-search'>
-                        <input name='city' type="text" placeholder="Dallas" id='city' autofocus='true'
-                            class='city-input' />
-                        <button type="submit" id='search-btn' class='btn'>Search</button>
-                    </form>
-                    <hr>
-                    </hr>
-                    <div id="search-history"></div>
-                </div>
-            </div>
-            <div class="stuff2">
-                <div id='five-day' class='row spacebetween'></div>
-            </div>
-        </div>
-    </main>
+  <div class="container"></div>
+    <div class="row">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src='./js/weather.js'></script>
+      <div class="col s12 m4 l3 card-panel Bg-color white-text">
+        <h5 class="white-text">Search for a City:</h5>
+        <form id="search-form">
+            <input class="white-text" id="city" type="text" placeholder="Enter city name"></input>
+            <button class="btn waves-effect waves-light hoverable" type="submit" value="submit">Submit</button>
+        </form>
+        <h5>Recently Viewed:</h5>
+            <ul id="recently-viewed"></ul>
+      </div>
 
+      <div class="col s12 m8 l9 card-panel Bg-color white-text">
+        <section>
+            <h5 id="current-city"></h5>
+            <span id="current-date"></span>
+            <p id="current-icon"></p>
+            <p id="current-temperature"></p>
+            <p id="current-wind"></p>
+            <p id="current-humidity"></p>
+        </section>
+      </div>
+
+      <h5 class="white-text">5-Day Forecast:</h5>
+      <div class="row">
+        <div class="col s12 m4 l2 card-style" id="day-1"><p></p></div>
+        <div class="col s12 m4 l2 card-style" id="day-2"><p></p></div>
+        <div class="col s12 m4 l2 card-style" id="day-3"><p></p></div>
+        <div class="col s12 m4 l2 card-style" id="day-4"><p></p></div>
+        <div class="col s12 m4 l2 card-style" id="day-5"><p></p></div>
+      </div>
+
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
-
 </html>
